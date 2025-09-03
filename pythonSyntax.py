@@ -14,6 +14,13 @@ Explanations and examples will be added by Greg.
 # - Multi-line comments (docstrings)
 # ==========================================================
 
+print("Steven", 3.14,10) #this is how we print in python
+
+"""This 
+is
+a block
+comment"""
+
 
 
 # ==========================================================
@@ -25,6 +32,18 @@ Explanations and examples will be added by Greg.
 # - Type checking with type()
 # ==========================================================
 
+message = "Welcome to FIU"
+print(type(message)) # type() is a function too
+
+a = 10
+b = 2
+print(type(a).__name__,type(b).__name__)
+
+isOpen = True
+print(type(isOpen))
+
+print(message[8])
+
 
 
 # ==========================================================
@@ -34,6 +53,19 @@ Explanations and examples will be added by Greg.
 # - Comparison (==, !=, >, <, >=, <=)
 # - Logical (and, or, not)
 # ==========================================================
+
+print(a + b) #addition
+print(a - b) #subtraction
+print(a * b) #multiplication
+print(a / b) #division
+print(a // b) #Integer division
+print(a ** b) #exponentiation
+print(7 % 2) #Modulus (Remainder of the division)
+
+
+
+
+
 
 
 
@@ -45,6 +77,17 @@ Explanations and examples will be added by Greg.
 # - Common methods (.upper(), .lower(), .strip(), etc.)
 # ==========================================================
 
+first_name = "steven"
+last_name = "benni"
+
+print(first_name + last_name)
+print(first_name + " " + last_name)
+print(first_name,last_name)
+
+print(f"My name is {first_name.upper()} {last_name.title()}.") #F indicates that {first_name} {last_name} are variables.
+print(f"My name is {first_name} {last_name}.")
+print("2" + "3")
+print("***Welcome to Software Dev***".strip("*"))#Strip takes of what youd like to remove
 
 
 # ==========================================================
@@ -56,6 +99,31 @@ Explanations and examples will be added by Greg.
 # - Useful methods (.append(), .remove(), .sort(), etc.)
 # ==========================================================
 
+professors =["greg","richard","Steve","Ben","Noah","aaron","Casey"]
+print(type(professors))
+print(professors[0])
+print(professors[-1]) #takes out the last one removes Casey, 2 would remove aaron
+print(professors[2:5]) # acessing 2, 3, and 4
+print(professors[:5]) # acessing from index 0 to 4
+print(professors[3:]) # acessing indices from 3 to the end
+print(professors[:])  #
+
+professors.append("todd")#adds to the end, append adds 1 by 1
+print(professors)
+professors.extend(["Micheal", "mustafa", "naomi"])#extend adds all rather than once
+print(professors)
+professors.insert(2,"vyoma")
+print(professors)
+professors.remove("greg")
+x = professors.pop(2)
+print(professors,x)
+professors.reverse()
+print(professors)
+
+professors.sort()
+print(professors)
+professors.sort(reverse=True)
+print(professors)
 
 
 # ==========================================================
@@ -65,7 +133,12 @@ Explanations and examples will be added by Greg.
 # - Sets: unique collections
 # ==========================================================
 
+grades = (88.3, 78.6, 99.5)
+print(type(grades))
+#grades[0] = 91.3
 
+members = {"greg","richard","greg"}
+print(members)# this is going to be the answer pf a future assigment :))
 
 # ==========================================================
 # 7. DICTIONARIES
